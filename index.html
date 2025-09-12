@@ -5,17 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <div class="banner flex">
-      <div class="text-and-button">
-        <h1>Let's make beautiful flowers a part of your life.</h1>
-        <p>
+    <div
+      class="banner bg-[#FDEEF1] w-[100vw] h-[700px] flex pt-[50px] pl-[200px] pr-[200px]"
+    >
+      <div class="text-and-button text-left mx-auto items-center my-auto ">
+        <h1 class="font-lato font-[900] text-[60px] flex items-center">
+          Let's make <br> beautiful flowers a <br> part of your life.
+        </h1>
+        <p class="my-[10px] text-gray-600 pr-[20px] text-justify">
           It is a long established fact that a reader will be distracted by the
           readable content of a page when looking at its layout. The point of
           using Lorem Ipsum is that it has a more-or-less normal distribution of
           letters
         </p>
+        <button class="bg-[#E55473] text-white px-[15px] py-[5px] rounded-[5px] hover:bg-[#903448]">Shop Now</button>
       </div>
       <img src="flower-shop-assignment-resources\Asset\pngwing 10.png" alt="" />
     </div>
